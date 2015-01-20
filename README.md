@@ -9,8 +9,8 @@ Pamiętaj, że z każdą wersją wprowadzamy pełno ciekawych zmian.
 Żegnajcie piraci!
 
 #### Polecaja
-* kamcio96
-* NorthPL
-* ELDzi
-* TheMolkaPL
+* kamcio96 (star)
+* NorthPL (star)
+* ELDzi (star)
+* TheMolkaPL (star)
 * Dzikoysk http://scr.hu/1792/ng0ue
