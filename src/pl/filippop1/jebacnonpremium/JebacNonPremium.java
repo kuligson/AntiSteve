@@ -7,17 +7,18 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class JebacNonPremium extends JavaPlugin {
 	@Override
 	public void onEnable() {
-		this.getLogger().log(Level.INFO, "#################");
-		this.getLogger().log(Level.INFO, "# ANTY STEVE ON #");
-		this.getLogger().log(Level.INFO, "#################");
-		if (!Bukkit.getOnlineMode()) {
+		if (Bukkit.getOnlineMode()) {
+			this.getLogger().log(Level.INFO, "#################");
+			this.getLogger().log(Level.INFO, "# ANTY STEVE ON #");
+			this.getLogger().log(Level.INFO, "#################");
+		} else {
 			for (int i = 0; i < 80; i++) {
 				this.getLogger().log(Level.INFO, "");
 				this.getLogger().log(Level.INFO, "#########################################");
 				this.getLogger().log(Level.INFO, "#             NON PREMIUM!?             #");
 				this.getLogger().log(Level.INFO, "#########################################");
 				this.getLogger().log(Level.INFO, "#            WYLACZAM SERWER            #");
-				this.getLogger().log(Level.INFO, "#             Buy Minecraft:            #");
+				this.getLogger().log(Level.INFO, "#             Kup Minecraft:            #");
 				this.getLogger().log(Level.INFO, "# https://minecraft.net/store/minecraft #");
 				this.getLogger().log(Level.INFO, "#########################################");
 			}
@@ -27,8 +28,10 @@ public class JebacNonPremium extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		this.getLogger().log(Level.INFO, "##################");
-		this.getLogger().log(Level.INFO, "# ANTY STEVE OFF #");
-		this.getLogger().log(Level.INFO, "##################");
+		if (Bukkit.getOnlineMode()) {
+			this.getLogger().log(Level.INFO, "##################");
+			this.getLogger().log(Level.INFO, "# ANTY STEVE OFF #");
+			this.getLogger().log(Level.INFO, "##################");
+		}
 	}
 }
